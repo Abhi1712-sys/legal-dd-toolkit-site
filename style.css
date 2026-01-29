@@ -1,66 +1,89 @@
+/* ===== Global ===== */
 body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
   margin: 0;
-  background-color: #f4f6f8;
+  background: #f5f7fa;
   color: #1f2937;
+  line-height: 1.6;
 }
 
+/* ===== Header ===== */
 header {
-  background: linear-gradient(90deg, #0f172a, #1e3a8a);
-  padding: 18px 40px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  padding: 22px 40px;
 }
 
 header h1 {
-  color: #ffffff;
   margin: 0;
-  font-size: 24px;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0.3px;
 }
 
 nav {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 nav a {
   color: #e5e7eb;
-  margin-right: 18px;
   text-decoration: none;
+  margin-right: 18px;
   font-weight: 500;
 }
 
 nav a:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
 
+/* ===== Main Container ===== */
 .container {
-  padding: 40px;
   max-width: 1100px;
-  margin: auto;
+  margin: 40px auto;
+  padding: 40px;
   background: #ffffff;
-  margin-top: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
+/* ===== Headings ===== */
 h2 {
   color: #1e3a8a;
   margin-top: 0;
 }
 
-button, .btn {
-  background-color: #1e40af;
-  color: #fff;
-  padding: 12px 18px;
-  border: none;
-  border-radius: 6px;
+h3 {
+  color: #0f172a;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #1e40af, #1d4ed8);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  display: inline-block;
+  margin: 8px 10px 8px 0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn:hover {
-  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.35);
 }
 
+/* ===== Lists ===== */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* ===== Tables ===== */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -68,7 +91,8 @@ table {
 }
 
 th {
-  background-color: #e5e7eb;
+  background: #e5e7eb;
+  color: #111827;
 }
 
 th, td {
@@ -77,11 +101,12 @@ th, td {
   text-align: left;
 }
 
+/* ===== Footer ===== */
 footer {
-  margin-top: 40px;
-  background-color: #e5e7eb;
-  padding: 18px;
-  text-align: center;
-  font-size: 14px;
+  background: #e5e7eb;
   color: #374151;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  margin-top: 60px;
 }
